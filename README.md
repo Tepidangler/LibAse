@@ -60,3 +60,8 @@ std::shared_ptr<Texture2D> CreateTexture(std::string ImageName)
 	return Texture2D::Create(Img.get(), Img->GetImageSpec().GetWidth(), Img->GetImageSpec().GetHeight(), Img->GetImageSpec().GetChannels(), Img->GetImageByteSize());
 }
 ```
+
+# Important Notes
+
+- It's important to know that this currently only works on sprites that have a single layer, in the future I hope to have support for multi-layered sprites.
+- Support for animations is currently untested so I have no idea if an animated single layered sprite would work but there are plans to add support for this in the future.
